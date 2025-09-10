@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
  <title>Контакты</title>
  <meta name="description" content="Наши контакты для обратной связи">
+ <link rel = "stylesheet" href = "../static/styles.css">
 </head>
 <body>
     <header>
@@ -47,6 +48,34 @@
         <p>https://psycho.com/alwaysthere</p>
         <p>https://vk.com/alwaysthere</p>
     </section>
+
+    <form id = "ContactForm">
+        <label for = "name"> Ваше имя: </label>
+        <input type = "text" id = "name" name = "name">
+
+        <label for="phone">Ваш телефон:</label>
+        <input type = "text" id = "phone" name = "phone" placeholder = "+7-999-999-99-99">
+
+        <label for = "email">Ваш email:</label>
+        <input type = "text" id = "email" name = "email" required>
+
+        <label for ="cource">Ваш курс</label>
+        <select id = "cource" name = "cource">
+            <option value = "">--</option> 
+            <option value = "1">1 курс</option>
+            <option value = "2">2 курс</option>
+            <option value = "3">3 курс</option>
+            <option value = "4">4 курс</option>
+            <option value = "other">Другой</option>       
+        </select>
+
+        <label for = "message">Ваше сообщение</label>
+        <textarea id = "message" name = "message" rows = "4"></textarea>
+
+        <button type = "submit" id ="submit-btn">Отправить</button>
+        <button type = "reset" id ="reset-btn">Очистить</button>
+    </form>
+    
  </main>
  <footer>
     <p>&copy; 2023 AlwaysThere. All rights are protected. 2023</p>
