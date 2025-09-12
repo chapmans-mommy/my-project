@@ -16,13 +16,13 @@ function validateEmail() {
 }
 
 function showError(input, message) {
-  const formControl = input.parentElement;
-  const errorControl =
+    const formControl = input.parentElement;
+    const errorControl =
     formControl.querySelector(".error") || document.createElement("div");
-  errorControl.className = "error";
-  errorControl.textContent = message;
-  formControl.appendChild(errorControl);
-  input.style.borderColor = "red";
+    errorControl.className = "error";
+    errorControl.textContent = message;
+    formControl.appendChild(errorControl);
+    input.style.borderColor = "red";
 }
 
 function hideError(input) {
